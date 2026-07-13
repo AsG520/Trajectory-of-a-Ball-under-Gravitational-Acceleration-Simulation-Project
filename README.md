@@ -1,8 +1,8 @@
 # Trajectory of a Ball under Gravitational Acceleration Simulation Project
 
-Features in Design
+Features in Simulation
 
-Math Concepts in Design
+Math Concepts in Simulation
 
 How it Works
 
