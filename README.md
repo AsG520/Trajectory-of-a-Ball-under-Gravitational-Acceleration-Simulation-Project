@@ -2,7 +2,7 @@
 
 Features in Simulation
 
-Math Concepts in Simulation
+Physics & Math Concepts in Simulation
 
 How it Works
 
