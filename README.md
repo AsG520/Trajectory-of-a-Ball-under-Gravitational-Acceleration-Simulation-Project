@@ -2,7 +2,9 @@
 
 Features in Simulation
 
-Physics & Math Concepts in Simulation
+Physics Concepts in Simulation
+- Gravitational Acceleration (g).
+- Coefficient of Restitution (e).
 
 How it Works
 
