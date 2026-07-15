@@ -1,5 +1,4 @@
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import java.awt.Color;
 import javax.swing.Timer;
 import java.awt.event.ActionEvent;
@@ -10,29 +9,22 @@ import javax.swing.JPanel;
 public class GravityBallSimulation extends JPanel {
     // frame properties
     static JFrame frame;
+    static int frameWidth = 500;
     static int frameHeight = 500;
     static boolean frameResizable = false;
     static boolean frameOpaque = true;
     static String frameTitle = "Gravity Ball Simulation";
     static boolean frameVisible = true;
-    static int frameWidth = 500;
 
     // ball properties
-    static int bx = 500;
-    static int by = 100;
+    static int bx = 220;
+    static int by = 30;
     static int bw = 50;
     static int bh = 50;
 
-    // floor properties
-    static JLabel floor;
-    static int floorWidth = frameWidth;
-    static int floorHeight = 20;
-    static int floorX = 0;
-    static int floorY = 450;
-
     // timer properties
     static Timer timer;
-    static int timerDelay = 10;
+    static int timerDelay = 15;
 
     // physics properties
     static double g = 9.8;
@@ -46,17 +38,13 @@ public class GravityBallSimulation extends JPanel {
 
     public static void main(String args[]) {
         frame = new JFrame(frameTitle);
-        frame.getContentPane().setBackground(new Color(blackColor[0], blackColor[1], blackColor[2]));
         frame.setSize(frameWidth, frameHeight);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
         frame.setResizable(frameResizable);
         GravityBallSimulation panel = new GravityBallSimulation();
-        floor = new JLabel();
-        floor.setBounds(floorX, floorY, floorWidth, floorHeight);
-        floor.setBackground(new Color(whiteColor[0], whiteColor[1], whiteColor[2]));
-        floor.setOpaque(frameOpaque);
-        frame.add(floor);
+        panel.setBounds(0, 0, frameWidth, frameHeight);
+        panel.setBackground(new Color(blackColor[0], blackColor[1], blackColor[2]));
         frame.add(panel);
         frame.setVisible(frameVisible);
 
@@ -64,6 +52,7 @@ public class GravityBallSimulation extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 collisionCheck();
                 updatePostion();
+                panel.repaint();
             }
         });
         timer.start();
@@ -78,8 +67,14 @@ public class GravityBallSimulation extends JPanel {
     }
 
     private static void updatePostion() {
+        vy += g;
+        by += vy;
     }
 
     private static void collisionCheck() {
+        if (by >= 400) {
+            by = 400;
+            vy = -vy * cor;
+        }
     }
 }
