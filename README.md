@@ -1,5 +1,8 @@
 # Trajectory of a Ball under Gravitational Acceleration Simulation Project
 
+## Visual of Simulation
+<img width="478" height="483" alt="Image" src="https://github.com/user-attachments/assets/c9613fbf-9cd3-4ec4-93b1-58b88e4799b6" />
+
 ## Features in Simulation
 - Real time animation using a timer.
 - 2D trajectory of ball under gravitational acceleration in vacuum.
