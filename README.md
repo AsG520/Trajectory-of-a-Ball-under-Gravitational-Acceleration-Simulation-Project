@@ -1,13 +1,13 @@
 # 🔴 Trajectory of a Ball under Gravitational Acceleration Simulation Project
 
 ## 📘 Table of Contents
-- Visual of Simulation
-- Features in Simulation
-- Physics Concepts in Simulation
-- How it Works
-- Requirements
-- How to Run
-- Video Details for Simulation
+- 🎨 Visual of Simulation
+- 🔥 Features in Simulation
+- 📝 Physics Concepts in Simulation
+- 🛠️ How it Works
+- 🎯 Requirements
+- 💻 How to Run
+- 📹 Video Details for Simulation
 
 ## 🎬 Short Clip of Simulation
 https://github.com/user-attachments/assets/6ba25fb2-90b8-428c-92c6-5defb61ebc5b
